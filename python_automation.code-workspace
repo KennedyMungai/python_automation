@@ -12,9 +12,12 @@
 			"custname",
 			"custtel",
 			"delorean",
+			"exif",
+			"GPSTAGS",
 			"jackalopes",
 			"psswd",
-			"shaboinked"
+			"shaboinked",
+			"xmltodict"
 		]
 	}
 }
