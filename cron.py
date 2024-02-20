@@ -14,7 +14,7 @@ def main(number, other_number, output):
         output (file): The file with the result of the output
     """
     result = number * other_number
-    print(f"[{datetime.utcnow().isoformat()}] The result is {
+    print(f"[{datetime.now()}] The result is {
           result}", file=output)
 
 
