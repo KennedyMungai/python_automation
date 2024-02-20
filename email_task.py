@@ -50,7 +50,7 @@ if __name__ == '__main__':
     config.read_file(args.config)
 
     main(
-        args.mail,
+        args.email,
         server=config['DEFAULT']['server'],
         port=config['DEFAULT']['port'],
         from_email=config['DEFAULT']['email'],
