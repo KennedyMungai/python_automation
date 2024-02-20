@@ -1,9 +1,10 @@
 """A simple script for automated tasks"""
 import argparse
 import configparser
+import sys
 
 
-def main(number, other_number):
+def main(number, other_number, output):
     """The main function
 
     Args:
@@ -11,7 +12,7 @@ def main(number, other_number):
         other_number (int): Some other number
     """
     result = number * other_number
-    print(f'The result is {result}')
+    print(f'The result is {result}', file=output)
 
 
 if __name__ == '__main__':
@@ -20,6 +21,8 @@ if __name__ == '__main__':
     parser.add_argument('-n2', type=int, help='Another number', default=1)
     parser.add_argument(
         '--config', '-c', type=argparse.FileType('r'), help='config file')
+    parser.add_argument('-o', dest='output', type=argparse.FileType('w'),
+                        help='output file', default=sys.stdout)
 
     args = parser.parse_args()
 
@@ -30,4 +33,4 @@ if __name__ == '__main__':
         args.n1 = int(config['ARGUMENTS']['n1'])
         args.n2 = int(config['ARGUMENTS']['n2'])
 
-    main(args.n1, args.n2)
+    main(args.n1, args.n2, args.output)
