@@ -1,6 +1,7 @@
 astroid==3.0.3
 asttokens==2.4.1
 Babel==2.14.0
+beautifulsoup4==4.12.3
 certifi==2024.2.2
 charset-normalizer==3.3.2
 colorama==0.4.6
@@ -37,6 +38,7 @@ PyYAML==6.0.1
 pyzmq==25.1.2
 requests==2.31.0
 six==1.16.0
+soupsieve==2.5
 stack-data==0.6.3
 tomlkit==0.12.3
 tornado==6.4
