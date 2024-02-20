@@ -14,8 +14,8 @@ def main(number, other_number, output):
         output (file): The file with the result of the output
     """
     result = number * other_number
-    print(f"[{datetime.now()}] The result is {
-          result}", file=output)
+    print(f"[{datetime.now()}] The result is {result}",
+          file=output)
 
 
 if __name__ == '__main__':
